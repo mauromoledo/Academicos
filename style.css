@@ -1,83 +1,298 @@
-/* Hero Background */
-
-html, body {
-
-background-color: #E5E5E5;
+:root {
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
 
+.hero-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 65vw;
+    max-height: 400px;
+    min-height: 250px;
+    background: #0D74C4;
+}
 
-.img {
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#img-logo {
     width: 75%;
     height: auto;
     margin-top: 50px;
     margin-bottom: 25px;
-    
 }
 
-.hero-background {
-    position: absolute;
+.card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0px 0px 3px rgb(209, 208, 208);
+}
+
+.title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #3F4254;
+    padding-top: 24px;
+}
+
+.titulo-esquerda {
+    font-size: 14px;
+    color: #3F4254;
+    font-weight: 800;
+    padding: 23px 10vw;
+    padding-bottom: 0px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column
+}
+
+.icon {
+    padding-left: 10vw;
+    width: 25px;
+}
+
+.text-modulo {
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 10vw;
+}
+
+.horario {
+    font-size: 14px;
+    color: #3F4254;
+    padding: 0px 10vw;
+    padding-bottom: 15px;
+}
+
+.titulo-secao {
+    font-size: 14px;
+    color: #3F4254;
+    padding-top: 25px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.titulo-nome {
+    font-size: 12px;
+    color: #3F4254;
+    text-align: center;
+    padding-top: 18px;
+    font-weight: 800;
+}
+
+/* ------------- */
+
+#instrutor-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    width: 100%;
-    height: 55vw;
-    max-height: 300px;
-    min-height: 250px;
-    left: 0px;
-    top: 0px;
-    background: #0D74C4;
-
 }
 
-.button {
+.profile {
+    width: 50px;
+    height: auto;
+}
+
+.centralizar-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saiba-mais-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2.1em;
+    border-radius: 100px;
+    background-color: #0D74C4;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* ------------- */
+
+#semi-footer {
+    width: 100%;
+    background: #F3F6F9;
+    padding-bottom: 25px;
+}
+
+.text {
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 5vw;
+    padding-bottom: 25px;
+}
+
+.text-instrutor {
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 5vw;
+    padding-bottom: 30px;
+}
+
+#text-centralizar {
+    text-align: center;
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+}
+
+.blue-title {
+    font-size: 16px;
+    color: #0D74C4;
+    padding: 25px 5vw;
+    font-weight: 700;
+    padding-bottom: 0px;
+}
+
+#cadastrar-logar-botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.white-button {
     background-color: #ffffff;
     border: none;
+    font-weight: 700;
     border-radius: 100px;
-
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    color:#0D74C4;
-
-    padding: 10px 5vw;
-    
-    
-
+    font-size: 10px;
+    color: #0D74C4;
+    padding: 10px 50px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    
-  }
+    box-shadow: 0px 0px 3px rgb(209, 208, 208);
+}
 
-  @media only screen and (min-width: 760px) {
+.blue-button {
+    background-color: #0D74C4;
+    border: none;
+    font-weight: 700;
+    border-radius: 100px;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px rgb(209, 208, 208);
+}
 
-    .img {
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    width: 100%;
+    color: #ffffff;
+    background: #0D74C4;
+    padding-bottom: 15px;
+}
+
+.redesocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px rgb(209, 208, 208);
+    margin: 15px 2.5px;
+}
+
+@media only screen and (min-width: 760px) {
+    #img-logo {
         width: 588px;
     }
     .hero-background {
-        max-height: 400px;
-        height:400px;
-        
+        height: 400px;
     }
-    .button { 
-        font-size: 16px;
-        padding: 10px 50px;
+    .card {
+        max-width: 700px;
+    }
+    .icon-text {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon {
+        padding-left: 5vw;
+    }
+    .text-modulo {
+        padding-left: 2.5vw;
+    }
+    #big-button-top {
+        padding: 10px 70px;
+    }
+    #big-button-bottom {
+        padding: 10px 120px;
+    }
+    #semi-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background: #F3F6F9;
+    }
+    #text-semi-footer {
+        padding-left: 10vw;
+    }
+    #cadastrar-logar-botoes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10vw;
     }
 }
 
-  @media only screen and (min-width: 1200px) {
-
-      .img {
-          width: 688px;
-      }
-      .hero-background {
-          max-height: 500px;
-          height:500px;
-      }
-      .button { 
-          font-size: 22px;
-          padding: 15px 55px;
-      }
-  }
+@media only screen and (min-width: 1200px) {
+    #img-logo {
+        width: 688px;
+    }
+    .hero-background {
+        max-height: 500px;
+        height: 500px;
+    }
+    .card {
+        max-width: 900px;
+    }
+    #text-semi-footer {
+        padding-left: 18vw;
+    }
+    #cadastrar-logar-botoes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 18vw;
+    }
+}

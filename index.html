@@ -1,35 +1,232 @@
 <!DOCTYPE html>
 <html>
-    <head>  
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Academicos Desafio</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-        <script src='script.js'></script>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Academicos Desafio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
 
-    <body>
-        <header>
-            
-            <div class = "hero-background" >
-                <img class= "img" src="images/hero-img.png" alt="Logo curso Jornada Acadêmicos">
-                <button class="button">CADASTRO / LOGIN</button>
 
-            </div>
-            
-        </header>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero-background">
+        <header class="header">
+            <!-- Logo e botão de cadastro -->
+            <img id="img-logo" src="images/hero-img.png" alt="Logo curso Jornada Acadêmicos">
+            <button class="white-button" id="big-button-top">CADASTRO / LOGIN</button>
+
+        </header> <!-- Logo e botão de cadastro -->
+
+
 
         <main>
+            <!-- Conteudo principal da página -->
 
-        </main>
+            </article> <!-- Dois primeiros card de descrição do curso -->
 
-        <footer>
+            <section class="card">
+                <!-- Primeiro card -->
+                <header>
+                    <h2 class="title">DESCRIÇÃO</h2>
+                </header>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia eget libero in dictum.
+                    Etiam scelerisque sodales arcu at interdum. Fusce in vestibulum ligula, sed consequat mi. Donec
+                    congue in justo eu auctor. Quisque venenatis dignissim neque, vitae mollis eros porta id. Curabitur
+                    eu consectetur enim, id finibus lacus. Vestibulum nec tortor in diam pharetra aliquet sit amet sit
+                    amet mi. Curabitur blandit, ex ac vehicula finibus, ligula est dictum dui, ultrices egestas purus
+                    dolor eget dolor.
+                </p>
+            </section> <!-- Primeiro card -->
 
-        </footer>
-        
-    </body>
+
+            <section class="card">
+                <!-- Segundo card -->
+                <header>
+                    <h2 class="title">ESTE CURSO INCLUI</h2>
+                </header>
+                <p class="text" id="text-centralizar">
+                    The point of using Lorem Ipsum <br>
+                    The point of using Lorem Ipsum <br>
+                    The point of using Lorem Ipsum <br>
+                    The point of using Lorem Ipsum <br>
+                    The point of using Lorem Ipsum <br>
+                    The point of using Lorem Ipsum <br>
+                </p>
+            </section> <!-- Segundo card -->
+            </article> <!-- Dois primeiros card de descrição do curso -->
+
+
+            <article>
+                <!-- Artigo dos módulos  -->
+                <header>
+                    <h1 class="titulo-secao">CONTEÚDO</h2>
+                </header>
+
+                <section class="card">
+                    <header>
+                        <h2 class="titulo-esquerda">Módulo 1: Lorem Ipsum Sit Dor Amet</h2>
+                    </header>
+                    <div class="icon-text">
+                        <img class="icon" src="images/box.svg">
+                        <p class="text-modulo">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum.
+                        </p>
+                    </div>
+                    <footer>
+                        <h3 class="horario">1h 20min</h2>
+                    </footer>
+
+                </section>
+
+                <section class="card">
+                    <header>
+                        <h3 class="titulo-esquerda">Módulo 2: Lorem Ipsum Sit Dor Amet</h2>
+                    </header>
+                    <div class="icon-text">
+                        <img class="icon" src="images/users.svg">
+                        <p class="text-modulo">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum.
+                        </p>
+                    </div>
+                    <footer>
+                        <h3 class="horario">1h 20min</h2>
+                    </footer>
+
+                </section>
+
+                <section class="card">
+                    <header>
+                        <h2 class="titulo-esquerda">Módulo 3: Lorem Ipsum Sit Dor Amet</h2>
+                    </header>
+                    <div class="icon-text">
+                        <img class="icon" src="images/map.svg">
+                        <p class="text-modulo">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum.
+                        </p>
+                    </div>
+                    <footer>
+                        <h3 class="horario">1h 20min</h2>
+                    </footer>
+
+                </section>
+
+                <section class="card">
+                    <header>
+                        <h2 class="titulo-esquerda">Módulo 4: Lorem Ipsum Sit Dor Amet</h2>
+                    </header>
+                    <div class="icon-text">
+                        <img class="icon" src="images/award.svg">
+                        <p class="text-modulo">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum.
+                        </p>
+                    </div>
+                    <footer>
+                        <h3 class="horario">1h 20min</h2>
+                    </footer>
+
+                </section>
+
+            </article> <!-- Artigo dos módulos  -->
+
+            <article>
+                <!-- Artigo dos instrutores  -->
+
+                <header>
+                    <h1 class="titulo-secao">INSTRUTORES</h2>
+                </header>
+
+                <section class="card">
+                    <header id="instrutor-header">
+                        <h2 class="titulo-nome">Alex Turim</h2>
+                        <img class="profile" src="images/avatar-male.png">
+                    </header>
+
+                    <p class="text-instrutor">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem...
+                    </p>
+
+                </section>
+                <div class="centralizar-botao">
+                    <button class="saiba-mais-botao">
+                        <img id="icon" src="images/chevron-down.svg">
+                    </button>
+                </div>
+
+                <section class="card">
+                    <header id="instrutor-header">
+                        <h2 class="titulo-nome">Cristina Hasen</h2>
+                        <img class="profile" src="images/avatar-female.png">
+                    </header>
+
+
+
+                    <p class="text-instrutor">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem...
+                    </p>
+
+                </section>
+                <div class="centralizar-botao">
+                    <button class="saiba-mais-botao">
+                        <img src="images/chevron-down.svg">
+                    </button>
+                </div>
+            </article> <!-- Artigo dos instrutores  -->
+
+
+
+
+        </main> <!-- Conteudo principal da página -->
+
+
+        <section id="semi-footer">
+            <!-- Secação final  -->
+            <div id="text-semi-footer">
+                <h1 class="blue-title">Que tal embarcar nessa jornada?</h1>
+                <p class="text">Faça login ou cria sua conta.</p>
+            </div>
+
+            <div id="cadastrar-logar-botoes">
+                <Button class="blue-button">CADASTRAR</Button>
+                <Button class="white-button">LOGIN</Button>
+            </div>
+
+        </section><!-- Secação final  -->
+
+        <footer class="footer">
+            <!-- rodapé com redes sociais -->
+
+            <div id="contato">
+                <button class="redesocial"> <img src="images/facebook.svg"></button>
+                <button class="redesocial"> <img src="images/instagram.svg"></button>
+                <button class="redesocial"> <img src="images/linkedin.svg"></button>
+                <button class="redesocial"> <img src="images/twitter.svg"></button>
+            </div>
+
+            <button class="white-button" id="big-button-bottom">Visite academicos.org</button>
+
+            <p id="copright">
+
+                Processo Seletivo Acadêmicos © 2021
+                <br><br>
+                Desenvolvido por Mauro Moledo
+            </p>
+        </footer> <!-- rodapé com redes sociais -->
+
+</body>
+
+</div>
+
 </html>
